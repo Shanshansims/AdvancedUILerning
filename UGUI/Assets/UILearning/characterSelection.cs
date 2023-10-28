@@ -2,20 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class characterSelection : MonoBehaviour
+public class CharacterSelection : MonoBehaviour
 {
     private List<GameObject> models;
 
     private int selectionIndex = 0;
+   
 
     private void Start()
     {
         models = new List<GameObject>();
-        foreach (Transform t in transform)
+        foreach(Transform t in transform)
         {
             models.Add(t.gameObject);
             t.gameObject.SetActive(false);
         }
+
+        
 
         models[selectionIndex].SetActive(true);
     }
@@ -23,7 +26,7 @@ public class characterSelection : MonoBehaviour
     //Maus bewegen und bewegt model auch.
     private void Update()
     {
-        if (Input.GetMouseButton(0))
+        if(Input.GetMouseButton(0))
             transform.Rotate(new Vector3(0.0f, Input.GetAxis("Mouse X"), 0.0f));
     }
 
@@ -33,6 +36,7 @@ public class characterSelection : MonoBehaviour
             return;
         if (index < 0 || index >= models.Count)
             return;
+
 
         models[selectionIndex].SetActive(false);
         selectionIndex = index;
