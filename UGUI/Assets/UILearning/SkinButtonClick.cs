@@ -9,10 +9,13 @@ public class SkinButtonClick : MonoBehaviour
     [SerializeField] Material[] materials;
 
 
-    private void Start()
+    private void Awake()
     {
         players = GameObject.FindGameObjectsWithTag("Player");
-
+        foreach(var player in players)
+        {
+            Debug.Log(player.name);
+        }
 
 
     }

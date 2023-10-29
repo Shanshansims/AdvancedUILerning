@@ -393,6 +393,7 @@
 "Assets/UILearning/characterSelection.cs"
 "Assets/UILearning/CustomizeColors.cs"
 "Assets/UILearning/CustomizeModels.cs"
+"Assets/UILearning/Menu.cs"
 "Assets/UILearning/SkinButtonClick.cs"
 "Assets/UILearning/SkinColorHandler.cs"
 "Assets/UILearning/youtubelerning/HealthSlider.cs"
