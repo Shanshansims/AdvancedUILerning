@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterSelection : MonoBehaviour
 {
     private List<GameObject> models;
-
     private int selectionIndex = 0;
-   
+    public Button ChangHairStyle;
+    
+    public int SelectionIndex { get => selectionIndex; set => selectionIndex = value; }
 
     private void Start()
     {
@@ -18,9 +20,14 @@ public class CharacterSelection : MonoBehaviour
             t.gameObject.SetActive(false);
         }
 
-        
+        ChangHairStyle.onClick.AddListener(ChangeHair);
 
-        models[selectionIndex].SetActive(true);
+        models[SelectionIndex].SetActive(true);
+    }
+
+    public void ChangeHair()
+    {
+        models[selectionIndex].GetComponent<CustomizeModels>().SwitchHairs();
     }
 
     //Maus bewegen und bewegt model auch.
@@ -32,15 +39,15 @@ public class CharacterSelection : MonoBehaviour
 
     public void Select(int index)
     {
-        if (index == selectionIndex)
+        if (index == SelectionIndex)
             return;
         if (index < 0 || index >= models.Count)
             return;
 
 
-        models[selectionIndex].SetActive(false);
-        selectionIndex = index;
-        models[selectionIndex].SetActive(true);
+        models[SelectionIndex].SetActive(false);
+        SelectionIndex = index;
+        models[SelectionIndex].SetActive(true);
 
     }
 }

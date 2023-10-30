@@ -1,12 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.
-    UI;
+using UnityEngine.UI;
 
 public class CameraButton : MonoBehaviour
 {
-    public Transform target; // 小球的Transform
+    public Transform target; 
     public float smoothSpeed = 5f;
     public Vector3 offset;
 
@@ -16,11 +15,10 @@ public class CameraButton : MonoBehaviour
 
     void Start()
     {
-        moveButton = GetComponent<Button>();
-        moveButton.onClick.AddListener(MoveCamera);
+       
     }
 
-    void MoveCamera()
+    public void MoveCamera()
     {
         isMoving = true;
     }
@@ -33,7 +31,7 @@ public class CameraButton : MonoBehaviour
             Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed * Time.deltaTime);
             transform.position = smoothedPosition;
 
-            transform.LookAt(target);
+            //transform.LookAt(target);
         }
     }
 }

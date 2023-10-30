@@ -325,7 +325,7 @@ Transform:
   m_GameObject: {fileID: 210295954}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 2.8745, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -436,7 +436,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -91, y: 89}
+  m_AnchoredPosition: {x: -299, y: 89}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &526299456
@@ -483,13 +483,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 822763588}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 822763591}
+        m_TargetAssemblyTypeName: CameraButton, Assembly-CSharp
+        m_MethodName: MoveCamera
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -563,11 +563,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb50541e6fddaf4ab0dc2ac120392de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 210295958}
-  smoothSpeed: 1
-  offset: {x: 0, y: 0, z: 0}
-  isMoving: 0
-  initialPosition: {x: 0, y: 0, z: 0}
 --- !u!4 &822763590
 Transform:
   m_ObjectHideFlags: 0
@@ -598,7 +593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 210295958}
   smoothSpeed: 5
-  offset: {x: 0, y: 0, z: 0}
+  offset: {x: 0, y: 0.91, z: 8.68}
 --- !u!1 &890757603
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,7 +910,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1533543924}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.65, y: 1, z: -7.94}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
