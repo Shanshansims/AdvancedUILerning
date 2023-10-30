@@ -194,7 +194,7 @@ PrefabInstance:
     - target: {fileID: -7838278647683613983, guid: 9dad0115b5ecf014ba4a28b27e882e30, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 5b6c1a48749209b4e835154817dc69f1, type: 2}
+      objectReference: {fileID: 2100000, guid: 2a1447c179228054ebd2ff0277ba25fc, type: 2}
     - target: {fileID: -4819223349682164798, guid: 9dad0115b5ecf014ba4a28b27e882e30, type: 3}
       propertyPath: m_TagString
       value: Player
@@ -226,7 +226,7 @@ PrefabInstance:
     - target: {fileID: 4927228362899884761, guid: 9dad0115b5ecf014ba4a28b27e882e30, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 5b6c1a48749209b4e835154817dc69f1, type: 2}
+      objectReference: {fileID: 2100000, guid: 2a1447c179228054ebd2ff0277ba25fc, type: 2}
     - target: {fileID: 8815719266171919591, guid: 9dad0115b5ecf014ba4a28b27e882e30, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -511,7 +511,7 @@ PrefabInstance:
     - target: {fileID: -7838278647683613983, guid: 1dd52fefe76f3234b9bfdd612857f6be, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: cd29d0b377dd8d54b9fd2b403e9b3393, type: 2}
+      objectReference: {fileID: 2100000, guid: 2a1447c179228054ebd2ff0277ba25fc, type: 2}
     - target: {fileID: -4819223349682164798, guid: 1dd52fefe76f3234b9bfdd612857f6be, type: 3}
       propertyPath: m_TagString
       value: Player
@@ -543,7 +543,7 @@ PrefabInstance:
     - target: {fileID: 4927228362899884761, guid: 1dd52fefe76f3234b9bfdd612857f6be, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: cd29d0b377dd8d54b9fd2b403e9b3393, type: 2}
+      objectReference: {fileID: 2100000, guid: 2a1447c179228054ebd2ff0277ba25fc, type: 2}
     - target: {fileID: 5447389531557325435, guid: 1dd52fefe76f3234b9bfdd612857f6be, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -613,7 +613,7 @@ MonoBehaviour:
   - {r: 0.7568628, g: 0.4039216, b: 0.7058824, a: 0}
   - {r: 0.8745099, g: 0.86274517, b: 0.5294118, a: 0}
   - {r: 0.82745105, g: 0.49803925, b: 0.47058827, a: 0}
-  headMat: {fileID: 2100000, guid: cd29d0b377dd8d54b9fd2b403e9b3393, type: 2}
+  headMat: {fileID: 2100000, guid: 2a1447c179228054ebd2ff0277ba25fc, type: 2}
   eyesColors:
   - {r: 0.6745098, g: 0.9607844, b: 0.69803923, a: 0}
   - {r: 0.5686275, g: 0.89019614, b: 1, a: 0}
